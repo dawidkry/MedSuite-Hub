@@ -3,14 +3,12 @@ import streamlit as st
 # 1. Page Configuration
 st.set_page_config(page_title="MedSuite Hub", page_icon="🏥", layout="centered")
 
-# 2. Card Styling (Applied to Native Link Buttons)
+# 2. Card Styling
 st.markdown("""
     <style>
-    /* Hide Streamlit elements */
     header, footer, .stDeployButton, [data-testid="stToolbar"] {display:none !important;}
     .stApp {background-color:#0E1117; color:white; font-family:sans-serif;}
     
-    /* Transforming the standard link button into your "Med-Card" */
     .stLinkButton a {
         background-color: #161B22 !important;
         border: 2px solid #30363D !important;
@@ -28,7 +26,6 @@ st.markdown("""
         background-color: #1C2128 !important;
     }
 
-    /* Styling the text inside the buttons */
     .stLinkButton div p {
         font-size: 22px !important;
         font-weight: 700 !important;
@@ -43,20 +40,19 @@ st.title("🏥 MedSuite")
 st.write("Clinical Decision Support Ecosystem")
 st.divider()
 
-# 4. The Hub Grid
-
-# Module 1: NIHSS
+# 4. The Modules
+# NIHSS
 st.link_button("🧠 NIHSS Stroke Scale", 
                "https://nihss-stroke-severity-scoring.streamlit.app", 
                use_container_width=True)
 
-st.write("") # Space between cards
+st.write("") 
 
-# Module 2: CHADS-BLED (Updated Label)
-st.link_button("🫀 CHADS-BLED Benefit Calculator", 
-               "https://chads-bled-web.streamlit.app", 
+# CHADS-BLED (Added the 'v2' tag to the URL to force a browser refresh)
+st.link_button("❤️ CHADS-BLED Benefit Calculator", 
+               "https://chads-bled-web.streamlit.app/?refresh=1", 
                use_container_width=True)
 
-# 5. Footer Disclaimer
+# 5. Footer
 st.divider()
-st.caption("⚠️ For clinical educational use only. Verify all scores with institutional protocols.")
+st.caption("⚠️ For clinical educational use only.")
