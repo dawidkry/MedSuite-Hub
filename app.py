@@ -1,24 +1,26 @@
 import streamlit as st
 
-# 1. Config
+# 1. Page Configuration
 st.set_page_config(page_title="MedSuite Hub", page_icon="🏥", layout="centered")
 
-# 2. Force the "Card" style onto the Native Buttons
+# 2. Card Styling (Applied to Native Link Buttons)
 st.markdown("""
     <style>
+    /* Hide Streamlit elements */
     header, footer, .stDeployButton, [data-testid="stToolbar"] {display:none !important;}
     .stApp {background-color:#0E1117; color:white; font-family:sans-serif;}
     
-    /* This targets the actual Streamlit Link Button and makes it look like your card */
+    /* Transforming the standard link button into your "Med-Card" */
     .stLinkButton a {
         background-color: #161B22 !important;
         border: 2px solid #30363D !important;
         border-radius: 20px !important;
-        padding: 30px !important;
+        padding: 30px 20px !important;
         height: auto !important;
         text-align: center !important;
         display: block !important;
         transition: 0.3s !important;
+        text-decoration: none !important;
     }
     
     .stLinkButton a:hover {
@@ -26,11 +28,12 @@ st.markdown("""
         background-color: #1C2128 !important;
     }
 
-    /* Adjusting the text inside the button to match your h2/p style */
+    /* Styling the text inside the buttons */
     .stLinkButton div p {
-        font-size: 24px !important;
-        font-weight: bold !important;
+        font-size: 22px !important;
+        font-weight: 700 !important;
         margin: 0 !important;
+        color: white !important;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -40,17 +43,20 @@ st.title("🏥 MedSuite")
 st.write("Clinical Decision Support Ecosystem")
 st.divider()
 
-# 4. The Buttons (Functionally identical to cards now)
-st.link_button("🧠 NIHSS\n\nStroke Severity Scoring", 
+# 4. The Hub Grid
+
+# Module 1: NIHSS
+st.link_button("🧠 NIHSS Stroke Scale", 
                "https://nihss-stroke-severity-scoring.streamlit.app", 
                use_container_width=True)
 
-st.write("") # Spacer
+st.write("") # Space between cards
 
-st.link_button("🫀 Cardio Risk\n\nCHA₂DS₂-VASc & HAS-BLED", 
+# Module 2: CHADS-BLED (Updated Label)
+st.link_button("🫀 CHADS-BLED Benefit Calculator", 
                "https://chads-bled-web.streamlit.app", 
                use_container_width=True)
 
-# 5. Disclaimer
+# 5. Footer Disclaimer
 st.divider()
 st.caption("⚠️ For clinical educational use only. Verify all scores with institutional protocols.")
