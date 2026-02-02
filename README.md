@@ -30,7 +30,7 @@ Tap the (+) to create a new shortcut.
 
 Tap Add Action and search for "Open URLs".
 
-Paste your MedSuite Hub URL: https://your-hub-url.streamlit.app
+Paste the MedSuite Hub URL.
 
 2. Customize the Look (Rename & Icon)
 At the top of the shortcut editor, tap the down arrow (next to the name).
