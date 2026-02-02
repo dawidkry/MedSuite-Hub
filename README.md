@@ -20,7 +20,7 @@ A streamlined, high-performance suite of medical calculators designed for rapid 
 * **Deployment:** Streamlit Cloud / GitHub
 * **UI/UX:** Custom CSS for "Native App" feel on iOS/Android.
 
-📱 Optimized iOS Setup (The "Native App" Experience)
+## 📱 Optimized iOS Setup (The "Native App" Experience)
 For the best experience, do not run these through a browser tab. Use the iOS Shortcuts method to make MedSuite feel like a native app with zero address bars.
 
 1. Create the Shortcut
