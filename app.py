@@ -40,8 +40,8 @@ st.markdown("""
 st.title("🏥 MedSuite")
 st.write("Clinical Decision Support Ecosystem")
 
-# --- DEBUG MARKER: If you see this, the code is updated ---
-st.warning("🔄 MedSuite Updated: Refeeding Module Added")
+# --- THE FORCE-UPDATE MARKER ---
+st.info("System Update: v1.0.1 - Refeeding Module Online")
 
 st.divider()
 
