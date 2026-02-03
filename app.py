@@ -48,9 +48,16 @@ st.link_button("🧠 NIHSS Stroke Scale",
 
 st.write("") 
 
-# CHADS-BLED (Added the 'v2' tag to the URL to force a browser refresh)
+# CHADS-BLED
 st.link_button("❤️ CHADS-BLED Benefit Calculator", 
                "https://chads-bled-web.streamlit.app/?refresh=1", 
+               use_container_width=True)
+
+st.write("") 
+
+# REFEEDING SYNDROME (New Module)
+st.link_button("🧪 Adult Refeeding Syndrome", 
+               "https://adult-refeeding-syndrome.streamlit.app", 
                use_container_width=True)
 
 # 5. Footer
