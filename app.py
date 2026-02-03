@@ -6,12 +6,9 @@ st.set_page_config(page_title="MedSuite Hub", page_icon="🏥", layout="centered
 # 2. Card Styling
 st.markdown("""
     <style>
-    /* Surgical removal of all developer clutter */
     header, footer, .stDeployButton, [data-testid="stToolbar"] {display:none !important;}
-    
     .stApp {background-color:#0E1117; color:white; font-family:sans-serif;}
     
-    /* Ensuring link buttons follow the Dark Card aesthetic */
     .stLinkButton a {
         background-color: #161B22 !important;
         border: 2px solid #30363D !important;
@@ -22,6 +19,7 @@ st.markdown("""
         display: block !important;
         transition: 0.3s !important;
         text-decoration: none !important;
+        margin-bottom: 15px !important;
     }
     
     .stLinkButton a:hover {
@@ -49,18 +47,14 @@ st.link_button("🧠 NIHSS Stroke Scale",
                "https://nihss-stroke-severity-scoring.streamlit.app", 
                use_container_width=True)
 
-st.write("") 
-
 # CHADS-BLED
 st.link_button("❤️ CHADS-BLED Benefit Calculator", 
                "https://chads-bled-web.streamlit.app/?refresh=1", 
                use_container_width=True)
 
-st.write("") 
-
-# REFEEDING SYNDROME (Added ?v=1 to the URL to bypass cache)
+# REFEEDING SYNDROME
 st.link_button("🧪 Adult Refeeding Syndrome", 
-               "https://adult-refeeding-syndrome.streamlit.app?v=1", 
+               "https://adult-refeeding-syndrome.streamlit.app", 
                use_container_width=True)
 
 # 5. Footer
