@@ -39,6 +39,10 @@ st.markdown("""
 # 3. Header
 st.title("🏥 MedSuite")
 st.write("Clinical Decision Support Ecosystem")
+
+# --- DEBUG MARKER: If you see this, the code is updated ---
+st.warning("🔄 MedSuite Updated: Refeeding Module Added")
+
 st.divider()
 
 # 4. The Modules
