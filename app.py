@@ -53,10 +53,16 @@ st.link_button("❤️ CHADS-BLED Benefit Calculator",
                "https://chads-bled-web.streamlit.app", 
                use_container_width=True)
 
+# CHADS-ORBIT Benefit Calculator (External Link)
+st.link_button("❤️ CHADS-ORBIT Benefit Calculator", 
+               "https://chads-orbit-benefit-calculator.streamlit.app", 
+               use_container_width=True)
+
 # REFEEDING SYNDROME (External Link)
 st.link_button("🧪 Adult Refeeding Syndrome", 
                "https://adult-refeeding-syndrome.streamlit.app", 
                use_container_width=True)
+
 
 # 5. Footer
 st.divider()
