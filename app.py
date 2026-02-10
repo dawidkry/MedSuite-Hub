@@ -63,6 +63,11 @@ st.link_button("🧪 Adult Refeeding Syndrome",
                "https://adult-refeeding-syndrome.streamlit.app", 
                use_container_width=True)
 
+# DVLA Guidelines (External Link)
+st.link_button(" 🩺 DVLA Clinical Standards Dashboard", 
+               "https://dvla-guidelines-search-tool.streamlit.app/", 
+               use_container_width=True)
+
 
 # 5. Footer
 st.divider()
