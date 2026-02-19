@@ -43,6 +43,11 @@ st.divider()
 
 # 4. The Modules (All external links)
 
+# DVLA Guidelines (External Link)
+st.link_button(" 🩺 AMU Ultrasound Locator", 
+               "https://ultrasoundlocator.streamlit.app/", 
+               use_container_width=True)
+
 # NIHSS
 st.link_button("🧠 NIHSS Stroke Scale", 
                "https://nihss-stroke-severity-scoring.streamlit.app", 
