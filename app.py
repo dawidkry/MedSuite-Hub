@@ -73,6 +73,11 @@ st.link_button(" 🩺 DVLA Clinical Standards Dashboard",
                "https://dvla-guidelines-search-tool.streamlit.app/", 
                use_container_width=True)
 
+# DKA Guidelines (External Link)
+st.link_button("Adult DKA Clinical Decision Support", 
+               "https://dka-app.streamlit.app/", 
+               use_container_width=True)
+
 
 # 5. Footer
 st.divider()
